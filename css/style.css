@@ -370,6 +370,7 @@ utilize
 .utilize{
     position: relative;
     background-color: var(--background-cyan);
+    padding-bottom: 104px;
 }
 
 .utilize-container{
@@ -445,5 +446,40 @@ utilize
     width: 1252px;
     height: 383px;
     background-color: white;
-    margin-bottom: 8px;
+    margin-bottom: 88px;
+}
+
+
+.properties{
+    grid-template-columns: 2fr 1fr;
+    gap: 95px;
+    align-items: flex-start;
+}
+
+.property-list{
+    gap: 63px 40px;
+    grid-template-columns: repeat(3,1fr);
+    font-size:18px;
+    justify-content: center;
+    text-align: center;
+}
+
+.property-list img{
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--background-dark);
+    margin-bottom: 12px;
+}
+
+.property-list p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.property-img img{
+    width: 502px;
+    height: 353px;
+    margin: 0 auto;
 }
