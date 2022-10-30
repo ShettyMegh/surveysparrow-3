@@ -223,6 +223,7 @@ utilities
     color:#000000;
     text-decoration: underline;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -275,6 +276,10 @@ navigation
 
 .nav-item{
     position: relative;
+}
+
+.nav-item:hover{
+    color: #19B885;
 }
 
 
@@ -350,6 +355,7 @@ hero
 
 .desc-item:last-child{
     font-weight: 600;
+    cursor: pointer;
 }
 
 .hero-circle{
@@ -644,6 +650,7 @@ collapse
     grid-template-columns: 1fr auto;
     margin-bottom: 24px;
     align-items: center;
+    cursor: pointer;
    
 }
 
@@ -746,6 +753,7 @@ features
 .signup_banner p>span{
     font-weight: 600;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .feature_main .header{
@@ -942,6 +950,10 @@ feedback
     margin-bottom: 15px;
 }
 
+.profile-list .profile{
+    cursor: pointer;
+}
+
 .profile-list .profile h4{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -1026,6 +1038,7 @@ footer container
     color: #0D1B1E;
 }
 
+
 .footer-item h4{
     font-size: 18px;
     font-weight: 500;
@@ -1042,6 +1055,7 @@ footer container
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .footer-item:last-child .social-links{
