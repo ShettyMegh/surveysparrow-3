@@ -452,12 +452,125 @@ utilize
     margin-bottom: 64px;
 }
 
+
+/* steps */
 .steps{
     width: 1252px;
     height: 383px;
     background-color: white;
+    padding: 13px 55px 77px 72px;
     margin-bottom: 88px;
 }
+
+
+.steps-container{
+    height: 224px;
+    width: 1120px;
+    padding: 13px 77px 19px 55px;
+}
+
+.steps-count{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    grid-template-columns: repeat(4,1fr);
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    padding-top: 56px;
+    margin-bottom: 10px;
+}
+
+
+
+.steps-count .count-circle{
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    font-weight: 600;
+    width: 45.3px;
+    height: 45.3px;
+    padding-top: 8px;
+    text-align: center;
+    color: white;
+}
+
+.steps-count .count-circle::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    background-color: black;
+    width: 45.3px;
+    height: 45.3px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: -1;
+}
+
+.steps-list{
+    color: rgba(255, 255, 255, 1);
+    justify-content: center;
+    position: relative;
+}
+
+.step-item{
+    position: relative;
+    width: 273.25px;
+    padding: 18.68px 49.25px 15.36px 38px;
+    background-color: rgba(25, 184, 133, 1);
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.step-item::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: calc(56px / 2);
+    background-color: white;
+    display: block;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transform: skew(30deg);
+}
+
+
+.step-item::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: calc(56px / 2);
+    background-color: white;
+    display: block;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transform: skew(-30deg);
+
+}
+
+.step-item:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.step-item:last-child{
+    border-radius: 0px 20px 20px 0px;
+}
+
+.steps-desc{
+    text-align: center;
+    max-width: 967px;
+    margin: 0px auto 72px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*end*/
+
+
 
 
 .properties{
