@@ -491,7 +491,7 @@ utilize
 .utilize{
     position: relative;
     background-color: var(--background-cyan);
-    padding-bottom: 104px;
+    padding-bottom: 80px;
 }
 
 .utilize-container{
@@ -728,6 +728,10 @@ collapse
 ================
 */
 
+.collapse{
+    margin-bottom: calc(178px - 32px);
+}
+
 .collapse-container{
     max-width: var(--max-width);
     margin: 0 auto;
@@ -747,10 +751,16 @@ collapse
 .collapse-list{
     width: 720px;
     max-width: 720px;
-    height: 417px;
-    min-height: 417px;
     margin: auto;
-    margin-bottom: 178px;
+}
+
+.collapse-item{
+    border-bottom: 1px solid #DEE4E5;
+    padding: 32px 0;
+}
+
+.collapse-item:last-child{
+    border: none;
 }
 
 .collapse-header{
@@ -767,6 +777,7 @@ collapse
     line-height: 32px;
 }
 
+
 .collapse-desc{
     font-size: 16px;
     font-weight: 400;
@@ -781,6 +792,7 @@ collapse
 .collapse-item hr{
     color: #DEE4E5;
     margin: 32px auto 24px;
+    height: 1px;
 }
 
 
@@ -852,6 +864,7 @@ features
 }
 
 .signup_banner p{
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #F6F6F6;
@@ -861,6 +874,19 @@ features
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.signup_banner input{
+    width: 310px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.signup_banner .btn{
+    padding: 15.96px 26.98px 18.09px 33.97px;
+    width: 194.85px;
+    height: 56px;
+    font-size: 18px;
 }
 
 .feature_main .header{
