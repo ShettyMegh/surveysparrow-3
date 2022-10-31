@@ -250,13 +250,19 @@ navigation
     font-weight: 300;
 }
 
-.nav-container i {
-    width: 7px;
+
+
+.nav-header .nav-logo img{
+    width:197px;
 }
 
-
-.nav-header i{
+.nav-header .btn-green{
     display: none;
+}
+
+.nav-items-container{
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-items{
@@ -282,6 +288,105 @@ navigation
     color: #19B885;
 }
 
+
+@media only screen and (max-width:1250px){
+    .nav-more{
+        margin-left: auto;
+        gap:0 8px;
+    }
+
+    .nav-more a span{
+        display: none;
+    }
+
+    .nav-more img{
+        margin-right: 1px;
+    }
+
+    nav .fa-chevron-down{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    
+}
+
+@media only screen and (max-width:1130px){
+
+    .nav-container{
+        font-size: 12px;
+        gap: 0 15px;
+    }
+
+    .nav-header .nav-logo img{
+        width:150px;
+    }
+    
+    .nav-items{
+        gap: 0 12px;
+    }
+   
+}
+
+@media only screen and (max-width:950px){
+
+    .nav-container{
+        padding: 0 var(--padding-1);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px 0px;
+    }
+
+   
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-header .nav-logo img{
+        width:250px;
+    }
+
+    .nav-header .btn-green{
+        display: block;
+    }
+
+    .nav-items{
+        margin-top: 10px;
+    }
+
+    .nav-items-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: 0;
+        overflow: hidden;
+        transition: all .6s ease-in-out;
+    }
+
+    .nav-items, .nav-more{
+        flex-direction: column;
+        margin-left: 20px;
+        font-size: 20px;
+        align-items: flex-start;
+        gap: 20px 0;
+    }
+
+
+    .nav-more a span{
+        display: block;
+    }
+
+    .nav-more img{
+        margin-right: 8px;
+    }
+
+    .show-links{
+        display: flex;
+        height: 390px;
+    }
+
+}
 
 
 /* .nav-item::after{
