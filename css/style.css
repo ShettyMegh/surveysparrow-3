@@ -1922,6 +1922,7 @@ feedback
     max-width: var(--max-width);
     margin: 0 auto;
     text-align: center;
+    padding: 0 var(--padding-5);
     z-index: 2;
 }
 
@@ -2061,8 +2062,417 @@ feedback
     top: 32px;
 }
 
+@media only screen and (max-width:1200px){
+    .feedback .rectangle {
+        top: -1px;
+        height: 108px;
+    }
+
+    .feedback-container .signup_banner {
+        margin-bottom: 80px;
+        padding: 2rem;
+    }
+
+    .signup_banner h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .signup_banner .signup-form {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .signup_banner input {
+        width: 310px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .signup_banner .btn {
+        width: 194.85px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .reviews-list {
+        gap: 65px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .competitors h3 {
+        margin-bottom: 65px;
+    }
+
+    .competitors-list {
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        margin-bottom: 115px;
+    }
+
+    .customers {
+        padding-bottom: 120px;
+    }
+
+    .customers h3 {
+        margin-bottom: 45px;
+    }
+
+    .signup_banner:last-child {
+        height: auto;
+    }
+
+    .signup_banner:last-child h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .signup_banner:last-child img {
+        top: 0;
+        width: 394px;
+    }
+}
+
+@media only screen and (max-width:992px){
+
+    .feedback .rectangle {
+        top: -1px;
+        height: 108px;
+    }
+
+    .feedback-container {
+        padding: 0 var(--padding-3);
+    }
+
+    .feedback-container .signup_banner {
+        margin-bottom: 60px;
+    }
+
+    .signup_banner h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .signup_banner input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .signup_banner .btn {
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .signup_banner p {
+        font-size: 14px;
+    }
+
+    .feedback-container .reviews .reviews-header {
+        margin-bottom: 40px;
+    }
+
+    .feedback .subheading {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    
+    .feedback p {
+        font-size: 12px;
+    }
+
+    .reviews-list {
+        gap: 40px;
+        margin-bottom: 81px;
+        justify-content: center;
+    }
+
+    .reviews-list img{
+        width: 180px;
+    }
+
+    .competitors .subheading {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .competitors-list {
+        grid-template-columns: repeat(3,1fr);
+        gap: 60px 30px;
+        margin-bottom: 85px;
+    }
+
+    .customers {
+        padding-bottom: 70px;
+    }
+
+    .customers .customers-desc {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
 
 
+    .profile-list {
+        gap: 50px;
+        align-items: flex-start;
+    }
+
+    .profile-list img {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+
+    .profile-list .profile-active img {
+        width: 75px;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .profile-list .profile h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .profile-list .profile p {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+
+    .signup_banner:last-child h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .signup_banner:last-child img {
+        position: absolute;
+        top: 0;
+        width: 355px;
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    .feedback .rectangle {
+        position: absolute;
+        top: -1px;
+        height: 91px;
+        background-color: #33393F;
+    }
+
+
+    .feedback-container .signup_banner {
+        margin-bottom: 60px;
+        padding: 2rem;
+    }
+
+    .signup_banner h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .signup_banner input {
+        width: 285px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+
+    .signup_banner .btn {
+        padding: 10px;
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .signup_banner p {
+        font-size: 12px;
+    }
+
+    .reviews .subheading {
+        font-size: 15px;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+
+    .reviews-list {
+        gap: 40px;
+        margin-bottom: 81px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .reviews-list img{
+        width: 138px;
+    }
+
+    .competitors .subheading {
+        font-size: 24px;
+        margin-bottom: 40px;
+        line-height: 35px;
+    }
+
+    .competitors-list {
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px 30px;
+        margin-bottom: 85px;
+    }
+
+    .customers h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .profile-list {
+        gap: 25px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .signup_banner:last-child img {
+        width: 253px;
+    }
+}
+
+@media only screen and (max-width:576px){
+
+    .feedback-container {
+        padding: 0 var(--padding-3);
+    }
+
+    .feedback .rectangle {
+        height: 100px;
+    }
+
+    .feedback-container .signup_banner {
+        margin-bottom: 55px;
+        padding: 35px 12px;
+    }
+
+    .signup_banner h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .signup_banner input {
+        width: 163px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .signup_banner .btn {
+        padding: 2px 20px;
+        width: 113px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .signup_banner p {
+        font-size: 10px;
+    }
+
+    .reviews p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .reviews-list {
+        gap: 10px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .reviews-list img {
+        width: 100%;
+    }
+
+
+    .competitors .subheading {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .competitors-list {
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .competitors-list img {
+        width: 7rem;
+    }
+
+    .customers .subheading {
+        font-size: 14px;
+    }
+
+    .customers .customers-desc {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .profile-list {
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .profile-list img {
+        width: 40px;
+        opacity: .2;
+        margin-bottom: 15px;
+    }
+
+
+    .profile-list .profile-active img {
+        width: 55px;
+        opacity: 1;
+    }
+
+
+    .profile-list .profile h4 {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .profile-list .profile p {
+        font-size: 6px;
+        line-height: 10px;
+    }
+
+    .signup_banner:last-child .signup-form {
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .signup_banner:last-child h3 {
+        font-size: 18px;
+        line-height: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .signup_banner:last-child .signup-form .btn-green {
+        padding: 10px;
+    }
+
+    .signup_banner:last-child img {
+        display: none;
+    }
+
+}
 /*
 ================
 footer container
