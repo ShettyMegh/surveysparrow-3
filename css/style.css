@@ -1577,6 +1577,7 @@ features
     background-color: var(--background-cyan);
     position: relative;
     padding-bottom: 177px;
+    display: none;
 }
 
 .features .rectangle{
@@ -1698,6 +1699,7 @@ features
 
 
 
+
 /*
 ================
 voice software
@@ -1766,6 +1768,140 @@ voice software
 }
 
 
+@media only screen and (max-width:992px){
+    .voice_customer_sw {
+        padding-bottom: 120px;
+    }
+
+    .voice_customer_sw-container {
+        padding: 0 var(--padding-4);
+    }
+
+    .voice_customer_sw-header h3 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    .voice_customer_sw-header p {
+        margin-bottom: 80px;
+    }
+
+    .sw_property-container {
+        gap: 45px 30px;
+        align-items: flex-start;
+    }
+
+    .sw_property-header h4 {
+        font-size: 19px;
+    }
+
+    .sw_property-desc {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:768px){
+    .voice_customer_sw {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    .voice_customer_sw-container {
+        padding: 0 var(--padding-2);
+    }
+
+    .voice_customer_sw-header h3 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .voice_customer_sw-header p {
+        margin-bottom: 80px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .sw_property-container {
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .sw_property-header {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sw_property-header img {
+        width: 45px;
+        padding: 6px;
+    }
+
+    .sw_property-header h4 {
+        font-size: 16px;
+    }
+
+    .sw_property-desc {
+        text-align: justify;
+        line-height: 25px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width:576px){
+    .voice_customer_sw {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    .voice_customer_sw-container {
+        padding: 0 var(--padding-2);
+    }
+
+    .voice_customer_sw-header h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .voice_customer_sw-header p {
+        margin-bottom: 40px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .sw_property-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .sw_property-header {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sw_property-header img {
+        width: 40px;
+        padding: 4px;
+    }
+
+    .sw_property-header h4 {
+        font-size: 14px;
+    }
+
+    .sw_property-desc {
+        line-height: 25px;
+        font-size: 12px;
+    }
+}
 /*
 ================
 feedback
