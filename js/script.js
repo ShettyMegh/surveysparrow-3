@@ -33,13 +33,9 @@ function addClass(ele){
 
 // collapse bar
 const collapseItems = getElements('.collapse-item');
-console.log(collapseItems);
 collapseItems.forEach((collapseItem)=>{
     collapseItem.addEventListener('click',function(){
         removeClass(collapseItems,'collapse-active')
-        let className = this.className;
-        let headerLogo = getElement(`.${className} .collapse-header p`)
-        // headerLogo.style.transform = "rotate(30deg)";
         this.classList.toggle('collapse-active');
     })
 })
