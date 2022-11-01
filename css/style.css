@@ -2522,6 +2522,7 @@ footer container
 
 @media only screen and (max-width:992px){
     .footer-container {
+        grid-template-columns: repeat(5,1fr);
         padding: 0 var(--padding-2);
     }
 
@@ -2555,9 +2556,9 @@ footer container
 
 @media only screen and (max-width:576px){
 
-.footer-container {
-    grid-template-columns: repeat(1,1fr);
-    padding: 0 var(--padding-2);
-    gap: 20px;
-}
+    .footer-container {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 var(--padding-2);
+        gap: 20px;
+    }
 }
