@@ -1458,6 +1458,115 @@ collapse
 }
 
 
+@media only screen and (max-width:992px){
+
+    .collapse {
+        margin-bottom: 80px;
+    }
+
+    .collapse-container > p {
+        font-size: 18px;
+        margin: 55px auto;
+    }
+
+    .collapse-list {
+        width: auto;
+        margin: auto;
+    }
+
+    .collapse-item {
+        padding: 20px 0;
+    }
+
+    .collapse-header {
+        margin-bottom: 10px;
+    }
+
+
+    .collapse-header h2, .collapse-header p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .collapse-desc {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    
+
+}
+
+@media only screen and (max-width:768px){
+    .collapse-container {
+        padding: 0 var(--padding-3);
+    }
+
+    .collapse-container > p {
+        font-size: 15px;
+        margin: 35px auto;
+    }
+
+    .collapse-item {
+        padding: 20px 0;
+    }
+
+    .collapse-header {
+        margin-bottom: 10px;
+    }
+
+    .collapse-header h2, .collapse-header p {
+        font-size: 15px;
+    }
+
+
+    .collapse-desc {
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
+
+    .collapse-active .collapse-desc {
+        display: block;
+        height: 70px;
+        transition: all .4s ease-in-out;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .collapse {
+        margin-bottom: 40px;
+    }
+
+    .collapse-container {
+        padding: 0 var(--padding-2);
+    }
+
+    .collapse-container > p {
+        font-size: 12px;
+        margin: 25px auto;
+        line-height: 1.2rem;
+    }
+
+    .collapse-item {
+        padding: 20px 0;
+    }
+
+    .collapse-header h2, .collapse-header p {
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
+
+    .collapse-desc {
+        font-size: 10px;
+        line-height: 1rem;
+    }
+
+    .collapse-active .collapse-desc {
+        height: 70px;
+    }
+
+
+}
+
 /*
 ================
 features
