@@ -1374,8 +1374,8 @@ utilize
     
     .steps-desc {
         margin: 0px auto 12px;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .steps-desc br {
         display: none;
@@ -1592,17 +1592,17 @@ collapse
     }
 
     .collapse-header h2, .collapse-header p {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.2rem;
     }
 
     .collapse-desc {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1rem;
     }
 
     .collapse-active .collapse-desc {
-        height: 70px;
+        height: 100px;
     }
 
 
