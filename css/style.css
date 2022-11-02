@@ -715,13 +715,13 @@ hero
     }
 
     .hero-form input {
-        width: auto;
+        width: 100%;
         font-size: 16px;
         margin-bottom: 20px;
     }
 
     .hero-form button {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .hero-desc {
@@ -1408,6 +1408,7 @@ utilize
 
     .property-list p {
         font-size: 16px;
+        line-height: 20px;
     }
 
     .property-img img {
@@ -1608,7 +1609,7 @@ collapse
     }
 
     .collapse-active .collapse-desc {
-        height: 70px;
+        height: 80px;
     }
 
 
@@ -2828,5 +2829,9 @@ footer container
     .footer-item li {
         font-size: 14px;
         margin-bottom: 10px;
+    }
+
+    .footer-item:last-child li{
+        font-size: 14px;
     }
 }
