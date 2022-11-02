@@ -714,6 +714,7 @@ hero
     .hero-form input {
         width: auto;
         font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .hero-form button {
