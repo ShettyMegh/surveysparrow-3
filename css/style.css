@@ -1928,8 +1928,8 @@ features
     }
 
     .feature_main-item p {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
 
@@ -2538,6 +2538,8 @@ feedback
         margin-bottom: 0px;
     }
 
+    
+
     .reviews-list {
         gap: 40px;
         margin-bottom: 81px;
@@ -2619,16 +2621,16 @@ feedback
     }
 
     .reviews .subheading {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 35px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .reviews p {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .reviews-list {
@@ -2665,12 +2667,13 @@ feedback
     
 
     .customers .subheading {
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 1.8rem;
     }
 
     .customers .customers-desc {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 25px;
         margin-bottom: 40px;
         text-align: justify;
     }
