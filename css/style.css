@@ -693,49 +693,66 @@ hero
 }
 
 @media only screen and (max-width:576px){
-    
-    .hero-img .img{
-        width: 100%;
-    }
-
-
-    .voice .sparrow_article-desc {
-        font-size: 10px;
-    }
-
-    .sparrow_article-btn {
-        font-size: 10px;
+   .hero .heading {
+        font-size: 35px;
+        line-height: 2.8rem;
+        text-align: left;
+        margin-bottom: 35px;
     }
 
     .hero-banner article > p {
-        margin-bottom: 12px;
-        font-size: 8px;
-        line-height: 16px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
     }
 
-    .hero-form{
-        margin-bottom: 12px;
+    .hero-form {
+        margin-bottom: 35px;
     }
 
     .hero-form input {
         width: auto;
-        font-size: 10px;
+        font-size: 16px;
     }
 
-    .hero-form button{
-        font-size: 10px;
+    .hero-form button {
+        font-size: 16px;
     }
 
-    .hero-desc{
+    .hero-desc {
         flex-wrap: wrap;
+        margin-bottom: 4rem;
     }
 
-    .desc-item{
-        font-size: 6px;
+    .hero-img .img {
+        width: 100%;
+    }
+
+    .desc-item {
+        font-size: 14px;
         margin-bottom: 0px !important;
-        line-height: 1rem !important;
+        line-height: 1.8rem !important;
     }
 
+    .hero .subheading {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .voice .sparrow_article-desc {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .sparrow_article-btn {
+        font-size: 16px;
+    }
+
+
+
+
+   
 }
 
 /*
@@ -1244,28 +1261,48 @@ utilize
     }
     
     .utilize-top-features {
-        gap: 10px;
+        gap: 25px;
         padding: 12px;
         margin-top: 20px;
         margin-bottom: 40px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
+
+    .utilize-top-features .feature-item{
+        border-bottom: 1px solid;
+        padding: 20px 20px;
+    }
+
+    .utilize-top-features .feature-item:last-child{
+        border-bottom: none;
+    }
+
+    .utilize-top-features .feature-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .utilize-top-features .feature-item p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
     .utilize-top-features .feature-img {
         padding: 4px;
-        width: 25px;
+        width: 35px;
     }
 
     .utilize-article .subheading {
-        font-size: 13px;
-        line-height: 1.2rem;
+        font-size: 25px;
+        line-height: 2.2rem;
+        margin-bottom: 20px;
     }
 
 
     .utilize-article .sparrow_article-desc {
         margin-bottom: 36px;
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .steps {
@@ -1274,9 +1311,10 @@ utilize
     }
 
     .steps-container {
-        padding: 10px 73px;
+        padding: 10px 20px;
         display: grid;
         grid-template-columns: auto 1fr;
+        margin-bottom: 20px;
     }
 
     .steps-count {
@@ -1286,15 +1324,15 @@ utilize
     }
 
     .steps-count .count-circle {
-        font-size: 12px;
-        width: 25px;
-        height: 25px;
-        padding-top: 6px;
+        font-size: 15px;
+        width: 35px;
+        height: 35px;
+        padding-top: 8px;
     }
-
+    
     .steps-count .count-circle::after {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
 
     .steps-list {
@@ -1311,9 +1349,10 @@ utilize
     .step-item {
         border-radius: 2px;
         padding: 6px;
-        font-size: 9px;
-        width: 100px;
+        font-size: 15px;
+        width: 200px;
         clip-path: none;
+        text-align: center;
     }
 
 
@@ -1321,24 +1360,23 @@ utilize
         content: "";
         display: block;
         position: absolute;
-        width: 5px;
-        left: 45%;
+        width: 8px;
+        left: 50%;
         top: 20px;
-        height: 4px;
-        margin: 12px auto;
+        height: 8px;
+        margin: 18px auto;
         background: url(../assets/arrow-down.png) center/cover no-repeat;
     }
-
     .step-item:last-child:after{
         display: none;
 
     }
+    
     .steps-desc {
         margin: 0px auto 12px;
-        font-size: 8px;
-        line-height: 10px;
+        font-size: 12px;
+        line-height: 15px;
     }
-
     .steps-desc br {
         display: none;
     }
@@ -1348,6 +1386,8 @@ utilize
         gap: 20px;
     }
 
+   
+
     .property-list {
         gap: 22px;
         order: 1;
@@ -1356,21 +1396,21 @@ utilize
     }
 
     .property-list img {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin-bottom: 5px;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        margin-bottom: 15px;
     }
 
     .property-list p {
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 16px;
     }
 
     .property-img img {
-        width: 81%;
-        margin-bottom: 20px;
+        width: 95%;
+        margin-bottom: 22px;
     }
+
 
 }
 
@@ -1541,9 +1581,10 @@ collapse
     }
 
     .collapse-container > p {
-        font-size: 12px;
+        font-size: 14px;
         margin: 25px auto;
         line-height: 1.2rem;
+        text-align: justify;
     }
 
     .collapse-item {
@@ -1551,12 +1592,12 @@ collapse
     }
 
     .collapse-header h2, .collapse-header p {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 1.2rem;
     }
 
     .collapse-desc {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1rem;
     }
 
@@ -1827,6 +1868,9 @@ features
 @media only screen and (max-width:576px){
 
 
+    .features .rectangle {
+        height: 75px;
+    }
 
     .features-container .signup_banner .signup-form {
         font-size: 18px;
@@ -1846,11 +1890,23 @@ features
         font-size: 10px;
     }
 
+
     .features-container .signup_banner p {
-        font-size: 8px;
-        line-height: 5px;
+        font-size: 11px;
+        line-height: 14px;
     }
 
+
+    .features .header .subheading {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .feature_main .header p {
+        font-size: 14px;
+        line-height: 1rem;
+    }
 
 }
 
