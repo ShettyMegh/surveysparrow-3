@@ -464,10 +464,11 @@ navigation
     
     .nav-header .btn{
         padding: 5px 8px;
+        font-size: 20px;
     }
 
     .nav-header .nav-logo img{
-        width:150px;
+        width:180px;
     }
 
     .nav-items, .nav-more{
@@ -477,6 +478,8 @@ navigation
     .show-links{
         height: 300px;
     }
+
+
 }
 
 
