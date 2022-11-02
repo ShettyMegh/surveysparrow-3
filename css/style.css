@@ -2615,12 +2615,19 @@ feedback
 
     .signup_banner p {
         font-size: 10px;
+        line-height: 12px;
+    }
+
+    .reviews .subheading {
+        font-size: 16px;
+        line-height: 35px;
+        margin-bottom: 0px;
     }
 
     .reviews p {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 15px;
     }
 
@@ -2639,27 +2646,33 @@ feedback
 
     .competitors .subheading {
         margin-bottom: 30px;
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .competitors-list {
         grid-template-columns: repeat(2,1fr);
-        gap: 30px 20px;
+        gap: 5rem 1rem;
         margin-bottom: 40px;
     }
     
     .competitors-list img {
-        width: 7rem;
+        width: 10rem;
     }
 
+    .customers {
+        margin-top: 5rem;
+    }
+    
+
     .customers .subheading {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .customers .customers-desc {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
         margin-bottom: 40px;
+        text-align: justify;
     }
 
     .profile-list {
@@ -2682,13 +2695,13 @@ feedback
 
 
     .profile-list .profile h4 {
-        font-size: 13px;
+        font-size: 16px;
         margin-bottom: 2px;
     }
 
     .profile-list .profile p {
-        font-size: 6px;
-        line-height: 10px;
+        font-size: 9px;
+        line-height: 12px;
     }
 
     .signup_banner:last-child .signup-form {
@@ -2800,5 +2813,15 @@ footer container
         grid-template-columns: repeat(1,1fr);
         padding: 0 var(--padding-2);
         gap: 20px;
+    }
+
+    .footer-item h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer-item li {
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }
