@@ -1912,6 +1912,28 @@ features
         line-height: 1rem;
     }
 
+    .feature_main-item {
+        margin-top: 2rem;
+    }
+
+
+    .feature_main-item {
+        gap: 25px;
+        grid-template-columns: 1fr;
+    }
+
+    
+    .feature_main-img{
+        order: -1;
+    }
+
+    .feature_main-item p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+
 }
 
 /*
@@ -2088,13 +2110,13 @@ voice software
 
     .voice_customer_sw-header p {
         margin-bottom: 40px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
 
     .sw_property-container {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 45px;
     }
 
     .sw_property-header {
@@ -2108,12 +2130,12 @@ voice software
     }
 
     .sw_property-header h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .sw_property-desc {
-        line-height: 25px;
-        font-size: 12px;
+    line-height: 25px;
+    font-size: 14px;
     }
 }
 
