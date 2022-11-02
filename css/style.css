@@ -1577,7 +1577,7 @@ features
     background-color: var(--background-cyan);
     position: relative;
     padding-bottom: 177px;
-    display: none;
+    /* display: none; */
 }
 
 .features .rectangle{
@@ -1675,7 +1675,7 @@ features
 }
 
 .feature_main-item{
-    grid-template-columns: 2fr auto;
+    grid-template-columns: 1fr 1fr;
     gap: 91px;
     color: black;
     text-align: left;
@@ -1698,7 +1698,161 @@ features
 }
 
 
+@media only screen and (max-width:1200px){
+    .feature_main-list {
+        gap: 100px;
+    }
 
+    .feature_main-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .feature_main-item h3 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .feature_main-item p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+
+}
+
+@media only screen and (max-width:992px){
+
+    .features {
+        padding-bottom: 120px;
+    }
+
+    .features-container {
+        padding: 0 var(--padding-3);
+    }
+
+    .features-container .signup_banner {
+        margin-bottom: 70px;
+    }
+
+    .feature_main .header {
+        margin-bottom: 60px;
+    }
+
+    .feature_main .header .subheading {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature_main .header p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    .feature_main-list {
+        gap: 100px;
+    }
+
+    .feature_main-item {
+        gap: 50px;
+    }
+
+    .feature_main-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .feature_main-item p {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+    }
+
+
+
+    
+}
+
+@media only screen and (max-width:768px){
+
+    .features {
+        padding-bottom: 120px;
+    }
+
+    .features .signup_banner {
+        background-color: var(--green-2);
+        color: white;
+        padding: 20px;
+        margin-bottom: 70px;
+    }
+
+    .feature_main .header {
+        margin-bottom: 30px;
+    }
+
+    .features .header .subheading{
+        font-size: 15px;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+
+    .feature_main-list {
+        gap: 50px;
+    }
+
+    .feature_main-item {
+        gap: 25px;
+    }
+
+    .feature_main-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feature_main-item p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:576px){
+
+
+
+    .features-container .signup_banner .signup-form {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .features-container .signup_banner input {
+        width: 165px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+
+
+    .features-container .signup_banner .btn {
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .features-container .signup_banner p {
+        font-size: 8px;
+        line-height: 5px;
+    }
+
+
+}
 
 /*
 ================
@@ -1902,6 +2056,10 @@ voice software
         font-size: 12px;
     }
 }
+
+
+
+
 /*
 ================
 feedback
