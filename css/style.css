@@ -722,6 +722,7 @@ hero
 
     .hero-form button {
         font-size: 14px;
+        width: 100%;
     }
 
     .hero-desc {
@@ -1268,7 +1269,7 @@ utilize
         gap: 25px;
         padding: 12px;
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 125px;
         grid-template-columns: 1fr;
     }
 
@@ -1311,7 +1312,7 @@ utilize
 
     .steps {
         padding: 9px;
-        margin-bottom: 45px;
+        margin-bottom: 100px;
     }
 
     .steps-container {
@@ -1341,7 +1342,7 @@ utilize
 
     .steps-list {
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
     }
 
     .step-item:first-child {
@@ -1366,7 +1367,7 @@ utilize
         position: absolute;
         width: 8px;
         left: 50%;
-        top: 20px;
+        top: 30px;
         height: 8px;
         margin: 18px auto;
         background: url(../assets/arrow-down.png) center/cover no-repeat;
@@ -1387,7 +1388,7 @@ utilize
 
     .properties {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 40px;
     }
 
    
@@ -1882,12 +1883,15 @@ features
     .features-container .signup_banner .signup-form {
         font-size: 18px;
         margin-bottom: 12px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .features-container .signup_banner input {
-        width: 165px;
+        width: 100%;
         height: 28px;
         font-size: 10px;
+        border-radius: 5px;
     }
 
 
@@ -1895,6 +1899,8 @@ features
     .features-container .signup_banner .btn {
         height: 28px;
         font-size: 10px;
+        width: 100%;
+        border-radius: 5px;
     }
 
 
@@ -2112,14 +2118,14 @@ voice software
     }
 
     .voice_customer_sw-header p {
-        margin-bottom: 40px;
+        margin-bottom: 100px;
         font-size: 14px;
         line-height: 20px;
     }
 
     .sw_property-container {
         grid-template-columns: 1fr;
-        gap: 45px;
+        gap: 100px;
     }
 
     .sw_property-header {
@@ -2593,7 +2599,7 @@ feedback
     }
 
     .feedback-container .signup_banner {
-        margin-bottom: 55px;
+        margin-bottom: 125px;
         padding: 35px 12px;
     }
 
@@ -2637,31 +2643,33 @@ feedback
     }
 
     .reviews-list {
-        gap: 10px;
-        margin-bottom: 60px;
+        gap: 75px;
+        margin-bottom: 125px;
         flex-direction: column;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1fr;
     }
 
     .reviews-list img {
-        width: 100%;
+        width: 80%;
+        margin:0 auto;
     }
 
 
     .competitors .subheading {
-        margin-bottom: 30px;
-        font-size: 22px;
+        margin: 85px 0;
+        font-size: 30px;
+        line-height: 3rem;
     }
 
     .competitors-list {
-        grid-template-columns: repeat(2,1fr);
-        gap: 5rem 1rem;
-        margin-bottom: 40px;
+        grid-template-columns: 1fr;
+        gap: 8rem 1rem;
+        margin-bottom: 175px;
     }
     
     .competitors-list img {
-        width: 10rem;
+        width: 15rem;
     }
 
     .customers {
