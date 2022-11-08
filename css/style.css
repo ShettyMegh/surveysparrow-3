@@ -1366,16 +1366,16 @@ utilize
     }
 
     .step-item:first-child {
-        border-radius: 2px;
-        padding-top: 25px;
-        clip-path: polygon(100% 65%, 50% 100%, 0 65%, 0 0, 50% 0, 100% 0);
-        /* odd one clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0% 75%); */
+        margin-top: 0;
+        border-radius: 0;
+        clip-path: polygon(100% 65%, 50% 100%, 0 65%, 0 0, 50% 35%, 100% 0);
     }
 
     .step-item {
+        margin-top: -15px;
         border-radius: 2px;
         padding: 6px;
-        padding-top: 35px;
+        padding-top: 38px;
         font-size: 15px;
         width: 200px;
         height: 80px;
@@ -1387,11 +1387,7 @@ utilize
         /* odd one clip-path: polygon(0 0, 30% 0, 50% 25%, 70% 0, 100% 0, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0 75%); */
     }
 
-    .step-item:last-child{
-        clip-path: polygon(100% 100%, 50% 100%, 0 100%, 0 0, 50% 35%, 100% 0);
-
-        /* odd one clip-path: polygon(0 0, 30% 0, 50% 25%, 70% 0, 100% 0, 100% 75%, 70% 75%, 50% 75%, 30% 75%, 0 75%); */
-    }
+ 
 
 
     /* .step-item::after {
