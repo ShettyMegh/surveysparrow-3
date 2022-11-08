@@ -1502,7 +1502,7 @@ collapse
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease;
 }
 
 
@@ -1512,18 +1512,18 @@ collapse
     width: 652px;
     max-height: 0px;
     overflow: hidden;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease;
 }
 
 .collapse-active .collapse-desc{
     display: block;
     max-height: 500px;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease;
 }
 
 .collapse-active .collapse-header p{
     transform: rotate(45deg);
-    transition: all .4s ease-in-out;
+    transition: all .6s ease;
 }
 
 
@@ -1600,12 +1600,6 @@ collapse
         line-height: 1.5rem;
         width: auto;
     }
-
-    .collapse-active .collapse-desc {
-        display: block;
-        height: 70px;
-        transition: all .4s ease-in-out;
-    }
 }
 
 @media only screen and (max-width:576px){
@@ -1637,12 +1631,6 @@ collapse
         font-size: 12px;
         line-height: 1rem;
     }
-
-    .collapse-active .collapse-desc {
-        height: 80px;
-    }
-
-
 }
 
 /*

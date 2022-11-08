@@ -36,7 +36,7 @@ const collapseItems = getElements('.collapse-item');
 collapseItems.forEach((collapseItem)=>{
     collapseItem.addEventListener('click',function(){
         removeClass(collapseItems,'collapse-active')
-        this.classList.toggle('collapse-active');
+        this.classList.add('collapse-active');
     })
 })
 
