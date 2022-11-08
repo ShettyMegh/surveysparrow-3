@@ -1582,10 +1582,6 @@ collapse
         margin: 35px auto;
     }
 
-    .collapse-header {
-        margin-bottom: 10px;
-    }
-
     .collapse-header h2, .collapse-header p {
         font-size: 15px;
     }
