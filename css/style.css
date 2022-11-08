@@ -1362,26 +1362,39 @@ utilize
 
     .steps-list {
         flex-direction: column;
-        gap: 50px;
+        gap: 0px;
     }
 
     .step-item:first-child {
         border-radius: 2px;
-        clip-path: none;
-
+        padding-top: 25px;
+        clip-path: polygon(100% 65%, 50% 100%, 0 65%, 0 0, 50% 0, 100% 0);
+        /* odd one clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0% 75%); */
     }
 
     .step-item {
         border-radius: 2px;
         padding: 6px;
+        padding-top: 35px;
         font-size: 15px;
         width: 200px;
+        height: 80px;
         clip-path: none;
         text-align: center;
+        clip-path: polygon(100% 65%, 50% 100%, 0 65%, 0 0, 50% 35%, 100% 0);
+
+        
+        /* odd one clip-path: polygon(0 0, 30% 0, 50% 25%, 70% 0, 100% 0, 100% 75%, 70% 75%, 50% 100%, 30% 75%, 0 75%); */
+    }
+
+    .step-item:last-child{
+        clip-path: polygon(100% 100%, 50% 100%, 0 100%, 0 0, 50% 35%, 100% 0);
+
+        /* odd one clip-path: polygon(0 0, 30% 0, 50% 25%, 70% 0, 100% 0, 100% 75%, 70% 75%, 50% 75%, 30% 75%, 0 75%); */
     }
 
 
-    .step-item::after {
+    /* .step-item::after {
         content: "";
         display: block;
         position: absolute;
@@ -1395,7 +1408,7 @@ utilize
     .step-item:last-child:after{
         display: none;
 
-    }
+    } */
     
     .steps-desc {
         margin: 0px auto 12px;
