@@ -12,7 +12,11 @@ font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important; */
 }
+
 
 body{
     color: var(--text-dark);
@@ -289,6 +293,19 @@ utilities
         font-size: 14px;
     }
 
+
+
+
+    /*Signup banner*/
+    .signup_banner{
+        margin-left: -32px !important;
+        margin-right: -32px !important;
+    }
+
+    .signup_banner p>span{
+        display: block;
+    }
+
 }
 
 
@@ -324,7 +341,7 @@ navigation
     width:197px;
 }
 
-.nav-header .btn-green{
+.nav-header .btn{
     display: none;
 }
 
@@ -415,7 +432,7 @@ navigation
         width:250px;
     }
 
-    .nav-header .btn-green{
+    .nav-header .btn{
         display: block;
     }
 
@@ -1226,6 +1243,7 @@ utilize
 
     .step-item {
         padding: 10px;
+        padding-left: 20px;
         font-size: 10px;
     }
 
@@ -1481,14 +1499,14 @@ collapse
     font-size: 16px;
     font-weight: 400;
     width: 652px;
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
     transition: all .4s ease-in-out;
 }
 
 .collapse-active .collapse-desc{
     display: block;
-    height: 143px;
+    max-height: 500px;
     transition: all .4s ease-in-out;
 }
 
@@ -2073,7 +2091,7 @@ voice software
     }
 
     .sw_property-container {
-        gap: 20px;
+        gap: 80px;
         align-items: flex-start;
     }
 
@@ -2643,16 +2661,23 @@ feedback
     }
 
     .reviews-list {
-        gap: 75px;
+        gap: 30px;
         margin-bottom: 125px;
         flex-direction: column;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
     }
 
+
+
     .reviews-list img {
-        width: 80%;
         margin:0 auto;
+    }
+
+    .reviews-list img:last-child{
+        grid-column: 1/3;
     }
 
 
@@ -2776,6 +2801,11 @@ footer container
     cursor: pointer;
 }
 
+.footer-item li a{
+    color: rgba(13, 27, 30, 0.5);
+}
+
+
 .footer-item:last-child .social-links{
     margin-top: 26px;
     gap: 24px;
@@ -2827,6 +2857,7 @@ footer container
         grid-template-columns: repeat(1,1fr);
         padding: 0 var(--padding-2);
         gap: 20px;
+        text-align: center;
     }
 
     .footer-item h4 {
@@ -2841,5 +2872,9 @@ footer container
 
     .footer-item:last-child li{
         font-size: 14px;
+    }
+
+    .social-links{
+        justify-content: center;
     }
 }
