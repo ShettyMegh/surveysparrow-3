@@ -1582,10 +1582,6 @@ collapse
         margin: 35px auto;
     }
 
-    .collapse-item {
-        padding: 20px 0;
-    }
-
     .collapse-header {
         margin-bottom: 10px;
     }
@@ -1616,10 +1612,6 @@ collapse
         margin: 25px auto;
         line-height: 1.2rem;
         text-align: justify;
-    }
-
-    .collapse-item {
-        padding: 20px 0;
     }
 
     .collapse-header h2, .collapse-header p {
