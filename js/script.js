@@ -47,7 +47,6 @@ collapseItems.forEach((collapseItem)=>{
 function removeClass(elements,className){
     const collapseDesc = document.querySelector(`.${className} .collapse-desc`);
     collapseDesc.style.height = "0px";
-
     elements.forEach((element)=>{
         element.classList.remove(className);
     })
