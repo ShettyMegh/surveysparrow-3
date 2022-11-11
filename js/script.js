@@ -37,10 +37,17 @@ collapseItems.forEach((collapseItem)=>{
     collapseItem.addEventListener('click',function(){
         removeClass(collapseItems,'collapse-active')
         this.classList.add('collapse-active');
+        const collapseDesc = document.querySelector('.collapse-active .collapse-desc');
+        collapseDesc.style.height = collapseDesc.scrollHeight +"px";
     })
 })
 
+
+
 function removeClass(elements,className){
+    const collapseDesc = document.querySelector(`.${className} .collapse-desc`);
+    collapseDesc.style.height = "0px";
+
     elements.forEach((element)=>{
         element.classList.remove(className);
     })

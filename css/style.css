@@ -1510,14 +1510,13 @@ collapse
     font-size: 16px;
     font-weight: 400;
     width: 652px;
-    max-height: 0px;
+    height: 0px;
     overflow: hidden;
     transition: all .6s ease;
 }
 
 .collapse-active .collapse-desc{
     display: block;
-    max-height: 500px;
     transition: all .6s ease;
 }
 
