@@ -62,12 +62,16 @@ const nav = getElement("#nav");
 
 // collapse bar
 const collapseItems = getElements('.collapse-item');
+let flag = false;
 collapseItems.forEach((collapseItem)=>{
     collapseItem.addEventListener('click',function(){
-        removeClass(collapseItems,'collapse-active')
+        if(flag){
+            removeClass(collapseItems,'collapse-active')
+        }
         this.classList.add('collapse-active');
         const collapseDesc = getElement('.collapse-active .collapse-desc');
         collapseDesc.style.height = collapseDesc.scrollHeight +"px";
+        flag=true;
     })
 })
 
