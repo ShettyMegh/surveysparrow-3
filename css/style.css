@@ -319,6 +319,14 @@ navigation
 ================
 */
 
+#nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.442);
+    transition: .2s all ease-in-out;
+}
+
 .fa-chevron-down{
     font-size: 12px;
     margin-left: 8px;
@@ -326,13 +334,14 @@ navigation
 
 .nav-container{
     max-width: var(--max-width);
-    margin: 20px auto;
-    padding: 0 var(--padding-5);
+    /* margin: 20px auto; */
+    padding: 20px var(--padding-5);
     gap: 0 28px;
     text-transform: capitalize;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+
 }
 
 
@@ -415,10 +424,10 @@ navigation
 @media only screen and (max-width:950px){
 
     .nav-container{
-        padding: 0 var(--padding-1);
+        padding: 20px var(--padding-1);
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px 0px;
+        gap: 0px;
     }
 
    
@@ -439,7 +448,7 @@ navigation
     }
 
     .nav-items{
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .nav-items-container{

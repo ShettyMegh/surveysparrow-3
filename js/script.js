@@ -18,16 +18,45 @@ const getElements = (sele)=>{
 
 // nav toggle button
 const toggleBtn = getElement('#toggleBtn');
+let navItemsContainer = getElement('.nav-items-container')
 
 toggleBtn.addEventListener('click',function(){
-    let navItemsContainer = getElement('.nav-items-container')
-    addClass(navItemsContainer);
+    toggleNavClass(navItemsContainer);
 
 })
 
-function addClass(ele){
+function toggleNavClass(ele){
     ele.classList.toggle('show-links');
 }
+
+function removeNavClass(ele){
+    ele.classList.remove('show-links');
+}
+
+//close navbar when clicked outside
+const mainEle = getElement('#main');
+mainEle.addEventListener('click',function(){
+    console.log(collapseItems);
+    removeNavClass(navItemsContainer);
+})
+
+//fixed navbar when scrolled
+const nav = getElement("#nav");
+    window.addEventListener('scroll',function(){
+        console.log(this.scrollY);
+        let scrollVer = this.scrollY;
+        if(scrollVer > 50){
+            nav.style.backgroundColor = "rgba(255, 255, 255)";
+            nav.style.boxShadow = "-1px 7px 16px -4px rgba(163,163,163,1)"
+            return;
+        }
+
+        nav.style.backgroundColor = "transparent";
+        nav.style.boxShadow = "-1px 7px 16px -4px rgba(163,163,163,0)"
+
+})
+
+
 
 
 
@@ -37,7 +66,7 @@ collapseItems.forEach((collapseItem)=>{
     collapseItem.addEventListener('click',function(){
         removeClass(collapseItems,'collapse-active')
         this.classList.add('collapse-active');
-        const collapseDesc = document.querySelector('.collapse-active .collapse-desc');
+        const collapseDesc = getElement('.collapse-active .collapse-desc');
         collapseDesc.style.height = collapseDesc.scrollHeight +"px";
     })
 })
@@ -45,9 +74,13 @@ collapseItems.forEach((collapseItem)=>{
 
 
 function removeClass(elements,className){
-    const collapseDesc = document.querySelector(`.${className} .collapse-desc`);
+    const collapseDesc = getElement(`.${className} .collapse-desc`);
     collapseDesc.style.height = "0px";
     elements.forEach((element)=>{
         element.classList.remove(className);
     })
 }
+
+
+
+
