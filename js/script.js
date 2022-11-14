@@ -70,7 +70,7 @@ collapseItems.forEach((collapseItem)=>{
         }
         this.classList.add('collapse-active');
         const collapseDesc = getElement('.collapse-active .collapse-desc');
-        collapseDesc.style.height = collapseDesc.scrollHeight +"px";
+        collapseDesc.style.height = (collapseDesc.scrollHeight+20) +"px";
         flag=true;
     })
 })
