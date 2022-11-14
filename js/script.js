@@ -1,17 +1,13 @@
 const getElement = (sele)=>{
     let ele = document.querySelector(sele);
     if(ele) return ele;
-    throw Error(
-        `${sele} not found`
-    )
+    return false;
 }
 
 const getElements = (sele)=>{
     let ele = document.querySelectorAll(sele);
     if(ele) return ele;
-    throw Error(
-        `${sele} not found`
-    )
+    return false;
 }
 
 
@@ -33,7 +29,6 @@ function toggleNavClass(ele){
 //close navbar when clicked outside
 const mainEle = getElement('#main');
 mainEle.addEventListener('click',function(){
-    console.log(collapseItems);
     removeNavClass(navItemsContainer);
 })
 
@@ -44,7 +39,6 @@ function removeNavClass(ele){
 //fixed navbar when scrolled
 const nav = getElement("#nav");
     window.addEventListener('scroll',function(){
-        console.log(this.scrollY);
         let scrollVer = this.scrollY;
         if(scrollVer > 50){
             nav.style.backgroundColor = "rgba(255, 255, 255)";
@@ -63,29 +57,35 @@ const nav = getElement("#nav");
 
 // collapse bar
 const collapseItems = getElements('.collapse-item');
-let flag = false;
-collapseItems.forEach((collapseItem)=>{
+collapseItems.forEach(function(collapseItem){
     collapseItem.addEventListener('click',function(){
-        if(flag){
-            removeClass(collapseItems,'collapse-active')
+
+    
+        if(this.classList.contains('collapse-active')){
+            const collapseDesc = getElement('.collapse-active .collapse-desc');
+            collapseDesc.style.height = "0px";
+            this.classList.remove('collapse-active');
+            return;
         }
+
+        removeClass(collapseItems,'collapse-active')
+
+
         this.classList.add('collapse-active');
         const collapseDesc = getElement('.collapse-active .collapse-desc');
-        collapseDesc.style.height = (collapseDesc.scrollHeight) +"px";
-        flag=true;
+        collapseDesc.style.height = collapseDesc.scrollHeight +"px";
     })
 })
 
 
 
 function removeClass(elements,className){
+    if(!getElement(`.${className} .collapse-desc`)){
+        return;
+    }
     const collapseDesc = getElement(`.${className} .collapse-desc`);
     collapseDesc.style.height = "0px";
     elements.forEach((element)=>{
         element.classList.remove(className);
     })
 }
-
-
-
-
