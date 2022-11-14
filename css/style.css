@@ -354,6 +354,10 @@ navigation
     display: none;
 }
 
+.nav-header .btn i{
+    transition: .4s ease-in-out;
+}
+
 .nav-items-container{
     justify-content: space-between;
     width: 100%;

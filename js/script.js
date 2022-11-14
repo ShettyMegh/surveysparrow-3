@@ -22,6 +22,7 @@ let navItemsContainer = getElement('.nav-items-container')
 
 toggleBtn.addEventListener('click',function(){
     toggleNavClass(navItemsContainer);
+    document.querySelector("#toggleBtn i").classList.toggle("fa-xmark");
 
 })
 
