@@ -1530,6 +1530,7 @@ collapse
 .collapse-active .collapse-desc{
     display: block;
     transition: all .6s ease;
+    margin-bottom: 60px;
 }
 
 .collapse-active .collapse-header p{
