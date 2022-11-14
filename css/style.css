@@ -1608,6 +1608,10 @@ collapse
         line-height: 1.5rem;
         width: auto;
     }
+
+    .collapse-active .collapse-desc{
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width:576px){
