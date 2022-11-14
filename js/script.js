@@ -29,16 +29,16 @@ function toggleNavClass(ele){
     ele.classList.toggle('show-links');
 }
 
-function removeNavClass(ele){
-    ele.classList.remove('show-links');
-}
-
 //close navbar when clicked outside
 const mainEle = getElement('#main');
 mainEle.addEventListener('click',function(){
     console.log(collapseItems);
     removeNavClass(navItemsContainer);
 })
+
+function removeNavClass(ele){
+    ele.classList.remove('show-links');
+}
 
 //fixed navbar when scrolled
 const nav = getElement("#nav");
