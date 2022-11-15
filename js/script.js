@@ -58,7 +58,7 @@ const nav = getElement("#nav");
 const topBtn = getElement("#top-btn");
 window.addEventListener('scroll',function(){
     let scrollVer = this.scrollY;
-    if(scrollVer > 200){
+    if(scrollVer > 1000){
         topBtn.style.display = "block";
         return;
     } 
