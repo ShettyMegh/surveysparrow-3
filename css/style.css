@@ -2912,3 +2912,8 @@ top btn
     padding-top:10px;
     z-index: 200;
 }
+
+#top-btn{
+    display: none;
+    transition: 0.4s all ease-in-out;
+}

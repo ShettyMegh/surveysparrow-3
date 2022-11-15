@@ -36,6 +36,8 @@ function removeNavClass(ele){
     ele.classList.remove('show-links');
 }
 
+
+
 //fixed navbar when scrolled
 const nav = getElement("#nav");
     window.addEventListener('scroll',function(){
@@ -48,6 +50,19 @@ const nav = getElement("#nav");
 
         nav.style.backgroundColor = "transparent";
         nav.style.boxShadow = "-1px 7px 16px -4px rgba(163,163,163,0)"
+
+})
+
+
+//top btn hide and show
+const topBtn = getElement("#top-btn");
+window.addEventListener('scroll',function(){
+    let scrollVer = this.scrollY;
+    if(scrollVer > 200){
+        topBtn.style.display = "block";
+        return;
+    } 
+    topBtn.style.display = "none";
 
 })
 
